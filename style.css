@@ -3,88 +3,138 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #121212;
   color: #fff;
 }
+
 a {
   color: #a0d3b0;
   text-decoration: none;
 }
+
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 20px;
 }
+
 header {
   background: #1e1e1e;
   padding: 15px 0;
 }
+
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
   color: #a0d3b0;
 }
+
 .nav-links {
   display: flex;
   list-style: none;
   gap: 1.5rem;
 }
+
 .nav-links a {
   color: #fff;
 }
+
 .hero {
   background: #1f1f1f;
   padding: 4rem 0;
+  text-align: center;
 }
+
 .hero h2 {
   font-size: 2.5rem;
 }
+
 .hero span {
   color: #a0d3b0;
 }
+
 .subtitle {
   font-size: 1.2rem;
   margin-top: 10px;
 }
+
 .description {
   margin-top: 20px;
   line-height: 1.6;
 }
+
 .section {
   padding: 3rem 0;
 }
+
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #a0d3b0;
 }
+
 .edu-grid {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
 .edu-card, .project-card {
   background: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
 }
+
 .edu-card img {
-  width: 100px;
+  max-width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
+
 .skills-list, .cert-list {
   list-style: none;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
 footer {
   background: #1e1e1e;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+/* --- RESPONSIVE STYLES --- */
+@media (max-width: 992px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
 }
