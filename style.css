@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f4f6f8; /* soft light gray-blue */
-  color: #111;          /* dark text */
+  background: #f4f6f8; /* soft light background */
+  color: #111;          /* dark text for readability */
 }
 
 a {
@@ -22,7 +22,7 @@ a {
 }
 
 header {
-  background: #e8ebed; /* light soft header */
+  background: #e8ebed; /* soft light header */
   padding: 15px 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -55,7 +55,7 @@ header {
 }
 
 .hero span {
-  color: #a0d3b0; /* accent */
+  color: #a0d3b0; /* green accent */
 }
 
 .subtitle {
@@ -75,7 +75,7 @@ header {
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #a0d3b0; /* accent */
+  color: #a0d3b0; /* green accent */
 }
 
 .edu-grid {
@@ -85,7 +85,7 @@ h2 {
 }
 
 .edu-card, .project-card {
-  background: #e8ebed; /* soft light card background */
+  background: #e8ebed; /* soft card background */
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -106,7 +106,7 @@ h2 {
 }
 
 footer {
-  background: #e8ebed; /* soft light footer */
+  background: #e8ebed; /* soft footer */
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
@@ -132,12 +132,12 @@ footer {
   flex-direction: column;
   gap: 1rem;
   font-size: 1.1rem;
-  color: #111; /* dark text for readability */
+  color: #111; /* dark text */
 }
 
 .contact-info a {
   color: #111; /* dark links for clarity */
-  text-decoration: none; 
+  text-decoration: none;
   font-weight: 500;
   transition: color 0.3s, background 0.3s;
 }
