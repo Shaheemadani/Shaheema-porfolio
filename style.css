@@ -6,12 +6,12 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #121212;
-  color: #fff;
+  background: #f9f9f9; /* light background */
+  color: #111;          /* dark text */
 }
 
 a {
-  color: #a0d3b0;
+  color: #a0d3b0; /* accent color */
   text-decoration: none;
 }
 
@@ -22,14 +22,15 @@ a {
 }
 
 header {
-  background: #1e1e1e;
+  background: #ffffff; /* white header */
   padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #a0d3b0;
+  color: #a0d3b0; /* accent color */
 }
 
 .nav-links {
@@ -39,13 +40,14 @@ header {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #111; /* dark links */
 }
 
 .hero {
-  background: #1f1f1f;
+  background: #e0f7ee; /* very light green tint */
   padding: 4rem 0;
   text-align: center;
+  border-radius: 8px;
 }
 
 .hero h2 {
@@ -53,7 +55,7 @@ header {
 }
 
 .hero span {
-  color: #a0d3b0;
+  color: #a0d3b0; /* accent */
 }
 
 .subtitle {
@@ -73,7 +75,7 @@ header {
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #a0d3b0;
+  color: #a0d3b0; /* accent */
 }
 
 .edu-grid {
@@ -83,10 +85,11 @@ h2 {
 }
 
 .edu-card, .project-card {
-  background: #1e1e1e;
+  background: #ffffff; /* light card background */
   padding: 20px;
   border-radius: 8px;
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .edu-card img {
@@ -103,10 +106,11 @@ h2 {
 }
 
 footer {
-  background: #1e1e1e;
+  background: #ffffff; /* light footer */
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
 }
 
 /* --- RESPONSIVE STYLES --- */
