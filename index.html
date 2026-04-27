@@ -1,143 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shaheema Madani | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaheema Madani | UI/UX & Frontend Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">Shaheema</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#objective">Objective</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero / Objective -->
-  <section class="hero" id="objective">
-    <div class="container">
-      <h2>Hello, I'm <span>Shaheema Madani</span></h2>
-      <p class="subtitle">Software Engineering Student | Full Stack Developer | UI/UX Enthusiast</p>
-      <p class="description">
-        Passionate UI/UX Designer and motivated Software Engineering student seeking an internship to apply creative design 
-        thinking and technical skills in crafting user-centered digital experiences. 
-        Also skilled in full-stack development, eager to contribute to projects that combine design and technology to enhance user satisfaction and innovation.
-      </p>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2>Education</h2>
-      <div class="edu-grid">
-        <div class="edu-card">
-          <img src="images/download.jpeg" alt="SLIATE" />
-          <h3>HNDIT</h3>
-          <p>Sri Lanka Institute of Advanced Technological Education, Kegalle</p>
-          <p>Aug 2023 – Present</p>
-        </div>
-        <div class="edu-card">
-          <img src="images/school.jpg" alt="Baduriya" />
-          <h3>G.C.E. A/L</h3>
-          <p>Sulaimaniya National School, Kannattota.</p>
-          <p>2019 – 2021</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Java</li>
-        <li>HTML / CSS / JS</li>
-        <li>PHP / MySQL</li>
-        <li>Git & GitHub</li>
-        <li>Responsive Design</li>
-        <li>VS Code / IntelliJ / NetBeans</li>
-        <li>Problem-Solving</li>
-        <li>Team Collaboration</li>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Shaheema.dev</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="home">
+    <div class="container hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Shaheema Madani</span><br>UI/UX & Frontend Designer</h1>
+        <p>Software Engineering student | passionate about crafting beautiful, human-centered digital experiences. I turn ideas into visual stories.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Design Work</a>
+          <a href="#contact" class="btn btn-outline">Hire Me →</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Shaheemadani" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shaheema-madani-927358271" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:shaheemamadhani@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <img src="img.jpeg" alt="Shaheema Madani" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="avatar-placeholder" style="display: none;">
+          <i class="fas fa-female"></i>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
+  <!-- SKILLS -->
+  <section id="skills">
     <div class="container">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Lustra Beauty E-Commerce Website</h3>
-        <p>HTML, CSS, JS, PHP, MySQL</p>
-        <p></p>
+      <h2 class="section-title">Design & Tech Toolkit</h2>
+      <div class="skills-wrapper">
+        <div class="skills-category">
+          <h3><i class="fas fa-palette"></i> UI/UX Focus</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Wireframing</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">User Research</span>
+            <span class="skill-tag">Visual Design</span>
+            <span class="skill-tag">Usability Testing</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3><i class="fas fa-code"></i> Dev & Tools Toolkit</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">HTML5/CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PHP/MySQL</span>
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">VS Code / IntelliJ</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">React (learning)</span>
+            <span class="skill-tag">Vue.js (learning)</span>
+            <span class="skill-tag">Animations</span>
+          </div>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>New Fashion E-commerce Website</h3>
-        <p>HTML, CSS, JS, PHP, MySQL</p>
-        <p></p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Design Projects</h2>
+      
+      <h3 style="margin: 20px 0 10px;">✨ Personal Projects</h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-exchange-alt"></i></div>
+          <div class="project-info">
+            <span class="project-badge">Personal</span>
+            <h3>Smart Exchange</h3>
+            <p>Smart currency/exchange platform UI with intuitive design and smooth user flow.</p>
+            <div class="project-links">
+              <a href="https://github.com/Shaheemadani/Smart-Exchange" target="_blank"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-utensils"></i></div>
+          <div class="project-info">
+            <span class="project-badge">Personal</span>
+            <h3>Hot Fresh Food</h3>
+            <p>Food ordering website with modern UI, restaurant menu design, and cart system.</p>
+            <div class="project-links">
+              <a href="https://github.com/Shaheemadani/Hot-Fresh-food-Website" target="_blank"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-tshirt"></i></div>
+          <div class="project-info">
+            <span class="project-badge">Personal</span>
+            <h3>New Fashion</h3>
+            <p>Fashion e-commerce UI with trendy design, product gallery, and style showcase.</p>
+            <div class="project-links">
+              <a href="https://github.com/Shaheemadani/New-fashion" target="_blank"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-comment-dots"></i></div>
+          <div class="project-info">
+            <span class="project-badge">Personal</span>
+            <h3>Chat App</h3>
+            <p>Real-time messaging interface with clean, modern chat UI/UX design.</p>
+            <div class="project-links">
+              <a href="https://github.com/Shaheemadani/Chat-App" target="_blank"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-shopping-bag"></i></div>
+          <div class="project-info">
+            <span class="project-badge">Personal</span>
+            <h3>Lustra Beauty</h3>
+            <p>Soft pink-themed beauty store with cart, admin panel, and product reviews.</p>
+            <div class="project-links">
+              <a href="https://github.com/Shaheemadani/Beauty-Website" target="_blank"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin: 40px 0 10px;">👥 Group Projects</h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-chart-line"></i></div>
+          <div class="project-info">
+            <span class="project-badge">Group Project</span>
+            <h3>Pharmacy POS System</h3>
+            <p>Vue.js + Tailwind CSS. Billing, inventory & stock tracking. Designed for speed.</p>
+            <div class="project-links">
+              <a href="https://github.com/MHDMufeek/Pharmacy-POS-system-" target="_blank"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-hospital-user"></i></div>
+          <div class="project-info">
+            <span class="project-badge">Group Project</span>
+            <h3>Medical Center System</h3>
+            <p>Patient records, appointments & billing. Simple, usable clinic interface.</p>
+            <div class="project-links">
+              <a href="https://github.com/Nadha-Nisthar/Medical-Center" target="_blank"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-laptop-code"></i></div>
+          <div class="project-info">
+            <span class="project-badge">Group Project</span>
+            <h3>E-Commerce Website</h3>
+            <p>Full-featured online store with product listing, cart, and order management.</p>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME / EDUCATION + EXPERIENCE -->
+  <section id="resume">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
+        <h2 class="section-title" style="margin-bottom: 0;">Education & Experience</h2>
+        <a href="Shaheema_Madani_CV.pdf" class="btn btn-outline" style="font-size: 0.9rem;" download><i class="fas fa-download"></i> Download CV (PDF)</a>
       </div>
       
-      <div class="project-card">
-        <h3>Personal Portfolio Website</h3>
-        <p>HTML, CSS, JS</p>
-        <p>Responsive site showcasing skills and projects.</p>
+      <div class="education-wrapper">
+        <div class="edu-card">
+          <div class="edu-header">
+            <span class="edu-degree">Higher National Diploma in Information Technology (HNDIT)</span>
+            <span class="edu-year">Aug 2023 – Present</span>
+          </div>
+          <div class="edu-institution">
+            <i class="fas fa-university"></i>
+            <span>SLIATE - Advanced Technological Institute, Kegalle</span>
+          </div>
+          <div class="edu-description">
+            Specialized in Full-Stack Development, UI/UX Principles, Database Design, and Software Engineering. Maintaining a strong academic record while building real-world projects.
+          </div>
+          <div class="edu-highlights">
+            <span class="edu-highlight">📘 Full-Stack Development</span>
+            <span class="edu-highlight">🎨 UI/UX Design</span>
+            <span class="edu-highlight">🗄️ Database Management</span>
+            <span class="edu-highlight">⚡ Agile Methodologies</span>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-header">
+            <span class="edu-degree">G.C.E. Advanced Level</span>
+            <span class="edu-year">2019 – 2021</span>
+          </div>
+          <div class="edu-institution">
+            <i class="fas fa-school"></i>
+            <span>Sulaimaniya National School, Kannattota</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin: 50px 0 20px;"><i class="fas fa-briefcase"></i> Professional Experience</h3>
+      <div class="exp-item">
+        <div class="exp-title">Software Engineering Intern</div>
+        <div class="exp-company">Proxima Technologies Pvt Ltd, Kegalle | Aug 2025 – Feb 2026</div>
+        <p>Collaborated on real-world software projects, contributed UI/UX improvements, performed debugging, and supported feature development in an agile team environment.</p>
+      </div>
+
+      <h3 style="margin: 50px 0 20px;"><i class="fas fa-certificate"></i> Certifications</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+        <div style="background: white; padding: 12px 20px; border-radius: 16px; border-left: 4px solid #c084fc;">
+          <strong>Web Design for Beginners</strong><br>
+          <span style="font-size: 0.85rem; color: #6b6b7b;">University of Moratuwa (2025)</span>
+        </div>
+        <div style="background: white; padding: 12px 20px; border-radius: 16px; border-left: 4px solid #ec489a;">
+          <strong>Level Up Your IT Career</strong><br>
+          <span style="font-size: 0.85rem; color: #6b6b7b;">ATI Kegalle (2025)</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Certifications -->
-  <section id="certifications" class="section">
+  <!-- CONTACT -->
+  <section id="contact">
     <div class="container">
-      <h2>Certifications</h2>
-      <p>Certificate of Participation – Level Up Your IT Career,
-        ATI Kegalle (2025)</p>
-      <ul class="cert-list">
-        <li> </li>
-       
-        
-      </ul>
+      <h2 class="section-title">Let's connect</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-detail"><i class="fas fa-envelope fa-fw"></i> shaheemamadhani@gmail.com</div>
+          <div class="contact-detail"><i class="fas fa-phone-alt"></i> 077-9508739</div>
+          <div class="contact-detail"><i class="fas fa-map-marker-alt"></i> A/96/2, PARANAWATHTHA, KANNATHTHOTA, Sri Lanka</div>
+          <div class="social-links" style="margin-top: 20px;">
+            <a href="https://github.com/Shaheemadani" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/shaheema-madani-927358271" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email address" required>
+          <textarea rows="4" placeholder="Tell me about a project or opportunity..."></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
+</main>
 
-  
+<footer>
+  <div class="container">
+    <p>©️ 2026 Shaheema Madani — Designed with <i class="fas fa-heart" style="color:#ec489a;"></i> for UI/UX & frontend craft</p>
+  </div>
+</footer>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> <a href="shaheemamadhani@gmail.com">shaheemamadhani@gmail.com</a></p>
-      <p><strong>Phone:</strong> 0779508739</p>
-      <p><strong>LinkedIn:</strong> <a href="#">https://www.linkedin.com/in/shaheema-madani </a></p>
-      <p><strong>GitHub:</strong> <a href="#">https://github.com/Shaheemadani </a></p>
-
-    
-    </div>
-  </section>
-
-  <footer>
-    
-  </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
